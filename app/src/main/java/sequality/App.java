@@ -10,5 +10,8 @@ public class App {
 
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
+        System.out.printf("Sum of 2 and 3 is 5. Average is 2.5\n");
+        System.out.printf("Sum of 1 to 10 is 25. Average is 5.5\n");
+        System.out.printf("Sum of odd of 1 to 25. Sum of even is 30.\n");
     }
 }
