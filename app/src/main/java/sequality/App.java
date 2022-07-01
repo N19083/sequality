@@ -8,10 +8,25 @@ public class App {
         return "Hello World!";
     }
 
+    public String getAverage(int a, int b) {
+      int sum = 0;
+      double kei = 0;
+      for(int i = a; i<=b; i++){
+        sum = sum + i;
+      }
+      if(b-a == 1){
+        kei = a+b;
+        return "Sum of "+a+" and "+b+" is "+kei+". Average is"+kei/2+".";
+      }
+      else{
+        kei = sum;
+        return "Sum of "+a+" to "+b+" is "+kei+". Average is"+kei/b+".";
+      }
+    }
+
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
-        System.out.printf("Sum of 2 and 3 is 5. Average is 2.5\n");
-        System.out.printf("Sum of 1 to 10 is 25. Average is 5.5\n");
-        System.out.printf("Sum of odd of 1 to 25. Sum of even is 30.\n");
-    }
+        System.out.println(new App().getAverage(2,3));
+        System.out.println(new App().getAverage(1,10));
+      }
 }
